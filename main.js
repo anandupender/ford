@@ -60,8 +60,6 @@ function offHover(){
 	// var background = document.getElementById('background');
 	// background.style.backgroundColor = "white";
 
-
-
 	// var image = document.getElementById('profile-image');
 	// image.style.visibility = "visible";
 
