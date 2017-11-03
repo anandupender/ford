@@ -1,8 +1,3 @@
-# EmotiveEmojis
+# stanFORD Mobility Project
 
-Pushing
-git remote add gh-pages https://github.com/anandupender/EmotiveEmojis.git
-
-git checkout -b gh-pages
-
-git push gh-pages gh-pages
+Anand Upender // Grace Greenwald // Daniel Chan // Cole Patterson // Dr. Barbara Karanian
