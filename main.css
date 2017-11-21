@@ -3,6 +3,27 @@
   text-align: center;
 }
 
+.row{
+  margin: 10px;
+}
+
+.column {
+    float: left;
+    width: 27%;
+    margin: 3%;
+    margin-top:0px; 
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.column p{
+   vertical-align: middle;
+   font-size: 18px;
+   color:white;
+   transition: ease 1s;
+/*   #F5F5F5
+*/}
+
 #emoji-bar{
 	position: fixed;
 	bottom:0;
@@ -61,7 +82,7 @@ label {
 */
   /* Prevent vertical gaps */
   line-height: 0;
-   
+   display: inline-block;
   -webkit-column-count: 5;
   -webkit-column-gap:   0px;
   -moz-column-count:    5;
@@ -140,4 +161,20 @@ label {
 .btn:hover{
   background-color: white;
   dborder: 2px solid black;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.card{
+  border:solid 2px black;
+  padding:5px;
+  padding-left: 20px;
+  margin-top: 30px;
 }
