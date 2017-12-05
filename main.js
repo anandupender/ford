@@ -28,7 +28,7 @@ var magicNum = 20; //(total images + 1)
 
 function removeImage(photo){
 	console.log("asdfasdfasdf", photo);
-	photo.remove();
+	// photo.remove();
 	console.log(document.getElementById("photos").childNodes.length);
 	if(document.getElementById("photos").childNodes.length === magicNum){
 		//document.getElementById('body').style.backgroundImage = "url('images/CoLabLogo.jpg')";
@@ -36,12 +36,12 @@ function removeImage(photo){
 		// div.innerHTML = "Thanks for Playing";
 		// div.style.height = "100px";
 		// document.getElementById("photos").appendChild(div);
-		var div = document.createElement("div");
-		div.innerHTML = "<h2>That's All Folks!</h2>";
-		div.style.height = "500px";
-		div.style.textAlign = "center";
-		div.style.margin = "50px";
-		document.getElementById("body").appendChild(div);
+		// var div = document.createElement("div");
+		// div.innerHTML = "<h2>That's All Folks!</h2>";
+		// div.style.height = "500px";
+		// div.style.textAlign = "center";
+		// div.style.margin = "50px";
+		// document.getElementById("body").appendChild(div);
 	}
 }
 
