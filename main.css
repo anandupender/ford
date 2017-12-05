@@ -3,12 +3,52 @@
   text-align: center;
 }
 
-#emoji-bar{
+#grad {
+  height:3px;
+  background: #7C85FB; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #FB5163, #7C85FB); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #FB5163, #7C85FB); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #FB5163, #7C85FB); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #FB5163, #7C85FB); /* Standard syntax */
+}
+
+#header h1{
+  font-size: 42px;
+  color:#7C85FB;
+}
+
+#header h3{
+  font-size: 18px;
+}
+
+.row{
+  margin: 10px;
+}
+
+.column {
+    float: left;
+    width: 27%;
+    margin: 3%;
+    margin-top:0px; 
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.column p{
+   vertical-align: middle;
+   font-size: 18px;
+   color:white;
+   transition: ease 1s;
+/*   #F5F5F5
+*/}
+
+#name-bar{
 	position: fixed;
 	bottom:0;
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,1);
 	width: 100%;
-	padding:10px;
+	padding:5px;
+  z-index: 2;
 }
 
 .emoji-button{
@@ -29,7 +69,7 @@ input{
 	width:75px;
 }
 input:hover {
-  border: 3px solid #F32F96;
+  border: 3px solid #7C85FB;
   outline:none;
 }
 
@@ -61,7 +101,7 @@ label {
 */
   /* Prevent vertical gaps */
   line-height: 0;
-   
+   display: inline-block;
   -webkit-column-count: 5;
   -webkit-column-gap:   0px;
   -moz-column-count:    5;
@@ -92,8 +132,6 @@ label {
   height:200px;
   transform: translate(-50%, -50%);
   transition: .5s ease;
-
-
 }
 
 #profile-container{
@@ -139,5 +177,26 @@ label {
 
 .btn:hover{
   background-color: white;
-  dborder: 2px solid black;
+  border: 2px solid black;
+}
+
+a{
+  text-decoration: underline;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+  color:#7C85FB;
+}
+
+.card{
+  border:solid 2px #7C85FB;
+  padding:5px;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.card-quote{
+  font-style: italic;
 }
