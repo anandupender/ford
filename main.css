@@ -21,6 +21,16 @@
   font-size: 18px;
 }
 
+.typed-center{
+  text-align: center;
+  margin: 100px;
+}
+
+.typed-center a{
+  font-size: 100px;
+  display: block;
+}
+
 .row{
   margin: 10px;
 }
