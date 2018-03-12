@@ -4,7 +4,7 @@
 }
 
 #grad {
-  height:3px;
+  height:70px;
   background: #7C85FB; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #FB5163, #7C85FB); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #FB5163, #7C85FB); /* For Opera 11.1 to 12.0 */
@@ -13,8 +13,11 @@
 }
 
 #header h1{
-  font-size: 42px;
+  font-size: 36px;
   color:#7C85FB;
+  margin-left:0px;
+  margin-right:0px;
+
 }
 
 #header h3{
@@ -35,13 +38,21 @@
   margin: 10px;
 }
 
+.main-title{
+  float:left;
+  margin-top:15px;
+  margin-left: 30px;
+  color:#eee;
+}
+
 .column {
-    float: left;
-    width: 27%;
-    margin: 3%;
+    float: right;
+/*    width: 27%;
+*/    margin: 3%;
     margin-top:0px; 
     margin-bottom: 5px;
     text-align: center;
+    margin-top:15px;
 }
 
 .column p{
@@ -191,13 +202,13 @@ label {
 }
 
 a{
-  text-decoration: underline;
-  color: black;
+  text-decoration: none;
+  color: #eee;
 }
 
 a:hover{
   text-decoration: underline;
-  color:#7C85FB;
+  color:#333333;
 }
 
 .card{
@@ -205,15 +216,7 @@ a:hover{
   padding:5px;
   padding-left: 20px;
   margin-top: 30px;
-  height:200px;
-}
-
-.card-long{
-  border:solid 2px #7C85FB;
-  padding:5px;
-  padding-left: 20px;
-  margin-top: 30px;
-  height:400px;
+  height:100%;
 }
 
 .card-quote{
@@ -222,4 +225,8 @@ a:hover{
 
 #bottom-bar{
   height:75px;
+}
+
+.typed-cursor {
+  opacity: 0;
 }
