@@ -9,6 +9,7 @@
   	<link rel="stylesheet" href="flip.css" type="text/css">
 
   	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   	<script src="main.js"></script>
   </head>
   <body id="body">
@@ -42,93 +43,94 @@
 		</div>
 	</div>
 
-	<!-- <section id="photos">
-	  <input onclick="removeImage(this)" type="image" src="images/ar.png" />
-	  <input onclick="removeImage(this)" type="image" src="images/pseudocode.png" />
-	  <input onclick="removeImage(this)" type="image" src="images/whiteboard.JPG" />
-	  <input onclick="removeImage(this)" type="image" src="images/iphone2.png" />
-	  <input onclick="removeImage(this)" type="image" src="images/graceJourney.png" />
-	  <input onclick="removeImage(this)" type="image" src="images/insideCar.png" />
-	  <input onclick="removeImage(this)" type="image" src="images/iphone1.png" />
-	  <input onclick="removeImage(this)" type="image" src="images/daniel.png" />
-	  <input onclick="removeImage(this)" type="image" src="images/tableExp1.JPG" />
-	  <input onclick="removeImage(this)" type="image" src="images/tableExp2.JPG" />
-	  <input onclick="removeImage(this)" type="image" src="images/tableExp3.JPG" />
-	  <input onclick="removeImage(this)" type="image" src="images/tableExp4.JPG" />
-	  <input onclick="removeImage(this)" type="image" src="images/billboard.JPG" />
-	  <input onclick="removeImage(this)" type="image" src="images/bart.JPG" />
-	  <input onclick="removeImage(this)" type="image" src="images/clay.JPG" />
-	  <input onclick="removeImage(this)" type="image" src="images/teamSf.JPG" />
-	  <input onclick="removeImage(this)" type="image" src="images/team.JPG" />
-	  <input onclick="removeImage(this)" type="image" src="images/postit.JPG" />
-	</section> -->
-<!-- 	<section id="photos">
- -->
  <div class ="row">
-	<div class="info-card">
+	<div class="info-card" id="card1">
+		<audio>
+		 	<source src="audio/test.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
 		<div class="front">
 			<img class="card-image" src="images/ar.png">
 		</div>
 		<div class="back">
 			<h2>Dealership AR</h2>
 			<p>
-				We sell cars as blank slates. However, people clearly care about the THINGS, the STUFF, in their cars. How can we allow them to visualize this emotional stuff using AR at the dealership?
+				One idea we had was to use augmented reality to help a user better understand the use of a new car at a dealership. The idea of having my stuff in a car makes it so much more personal, and for some, seeing the new car in the context of everyday travel for them could be a way to understand how it would fit in their life.  
 			</p>
 		</div>
 	</div>
 
 	<div class="info-card">
+		<audio>
+		 	<source src="audio/test.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
 		<div class="front">
 			<img class="card-image" src="images/tableExp1.JPG">
 		</div>
 		<div class="back">
 			<h2>Play-Dough at Ford</h2>
 			<p>
-				We brought the lunch room of the Ford Innovation Center back to Kindergarten. We used play dough as a medium to understand what pieces in cars are most memorable, to visualize past roadtrips, and to increase play in the workplace.
+				We tapped into unique Ford employee perspectives to determine which of our initial questions were most fruitful to tackle. We used clay as a medium to understand nostalgia for old cars, to visualize past road trips, and to re-discover play in the workplace.
+ 				<br>
+				Using prompts like: Think of a journey that you recently took that makes you smile. What aspect of your job is most exciting? If you could take out one thing in a car what would it be? And asked participants to make the answers out of clay. No stakes, no judgment, no instructions. They told stories about their abstract creations to clue us in to the inspirations behind the art.
+
 			</p>
 		</div>
 	</div>
 
 	<div class="info-card">
+		<audio>
+		 	<source src="audio/test.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
 		<div class="front">
 			<img class="card-image" src="images/postit.JPG">
 		</div>
 		<div class="back">
 			<h2>Context Dictate Modes</h2>
 			<p>
-				We began to think about how the many data points (traveller, partner, activity) that go into choosing a journey are related to people's decisions.
+				We used ethnographic interviews, shared travel experiences, and open-source data to think about the different data points that come together in the choice to select different modes of travel. Are you traveling with a partner or with kids, are you on your way to give a presentation, are you coming from a hotel in a new city? How do these contexts drive decision-making, and which attribute the most weight to the choice?			
 			</p>
 		</div>
 	</div>
 
 	<div class="info-card">
+		<audio>
+		 	<source src="audio/test.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
 		<div class="front">
 			<img class="card-image" src="images/pseudocode.png">
 		</div>
 		<div class="back">
 			<h2>Route Preference Pseudo Code</h2>
 			<p>
-				Can we learn the factors that go into a choosing a journey so that we provide better offerings later.
+				There are many decisions that go into choosing our transportation. Money, time, number of seats, privacy, space, and scenery are all some we have all felt the pain of sacrificing on. We wondered if we could prompt travelers for these interesting desires to choose a method of transport more tied to their values. What are the knobs or metrics of transportation that each user would have weights on in a machine learning model?
 			</p>
 		</div>
 	</div>
 
 
 	<div class="info-card">
+		<audio>
+		 	<source src="audio/test.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
 		<div class="front">
 			<img class="card-image" src="images/iphones.png">
 		</div>
 		<div class="back">
 			<h2>What's Motivating You?</h2>
 			<p>
-				Our prototype at showing how direct motivations can lead to different types of transportation.
+				What is a simple way to see the emotional state or priorities of a traveler before they choose a standard mode of transport that they do not actually enjoy? This interface is the human facing side of the pseudocode to the left and would slowly disappear in the app as it got to know the user better.
 			</p>
 		</div>
 	</div>
 </div>
 	<div id="bottom-bar"></div>
 
-<!-- </section>
- -->	  
+  <script src="photoStream.js"></script>
+ 
   </body>
 </html>

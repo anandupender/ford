@@ -24,27 +24,6 @@ function changeEmoji(newEmoji){
 	}
 }
 
-var magicNum = 20; //(total images + 1)
-
-function removeImage(photo){
-	console.log("asdfasdfasdf", photo);
-	// photo.remove();
-	console.log(document.getElementById("photos").childNodes.length);
-	if(document.getElementById("photos").childNodes.length === magicNum){
-		//document.getElementById('body').style.backgroundImage = "url('images/CoLabLogo.jpg')";
-		// var container = document.createElement("div");
-		// div.innerHTML = "Thanks for Playing";
-		// div.style.height = "100px";
-		// document.getElementById("photos").appendChild(div);
-		// var div = document.createElement("div");
-		// div.innerHTML = "<h2>That's All Folks!</h2>";
-		// div.style.height = "500px";
-		// div.style.textAlign = "center";
-		// div.style.margin = "50px";
-		// document.getElementById("body").appendChild(div);
-	}
-}
-
 function onHover(){
 	var background = document.getElementById('background');
 	background.style.backgroundColor = "black";
@@ -56,11 +35,11 @@ function onHover(){
 	image.style.visibility = "hidden";
 }
 
+
 function offHover(){
 	// var background = document.getElementById('background');
 	// background.style.backgroundColor = "white";
 
 	// var image = document.getElementById('profile-image');
 	// image.style.visibility = "visible";
-
 }
