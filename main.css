@@ -12,6 +12,16 @@
   background: linear-gradient(to right, #FB5163, #7C85FB); /* Standard syntax */
 }
 
+#thin-grad {
+  margin-top:50px;
+  height:6px;
+  background: #7C85FB; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #FB5163, #7C85FB); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #FB5163, #7C85FB); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #FB5163, #7C85FB); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #FB5163, #7C85FB); /* Standard syntax */
+}
+
 #header h1{
   font-size: 36px;
   color:#7C85FB;
@@ -254,4 +264,17 @@ a:hover{
 
 .email-link:hover{
   color:#555;
+}
+
+iframe{
+  display:block;
+  margin: 0 auto;
+  margin-top:30px;
+  float:middle;
+}
+
+.center-text{
+  text-align: center;
+  color:#7C85FB;
+
 }
