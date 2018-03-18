@@ -1,13 +1,3 @@
-// var audio = $("#audio1")[0];
-// document.getElementById("card1").addEventListener("mouseover", function( event ) {   
-// 	audio.play();
-// }, false);
-
-// document.getElementById("card1").addEventListener("mouseleave", function( event ) {   
-// 	audio.pause();
-// }, false);
-
-
 var audios = document.getElementsByClassName("info-card");
 for(var i = 0; i < audios.length; i++){
   	audios.item(i).addEventListener("mouseover", function( event ) { 
