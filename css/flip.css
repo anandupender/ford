@@ -14,7 +14,6 @@
 	transition: -webkit-transform 1s;
 	-webkit-transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
-	border: 1px solid black;
 
 }
 
@@ -27,7 +26,7 @@
 
 .back {
 	padding: 20px;
-	padding-top: 0px;
+	padding-top: 5px;
 	-webkit-transform: rotateY(-180deg);
 	max-width: 100%;
 /*    max-height: 200px;
