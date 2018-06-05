@@ -27,16 +27,18 @@
   color:#7C85FB;
   margin-left:0px;
   margin-right:0px;
+  white-space: nowrap;
 
 }
 
 #header h3{
   font-size: 18px;
+  padding: 7px;
 }
 
 .typed-center{
   text-align: center;
-  margin: 100px;
+  margin: 65px;
 }
 
 .typed-center a{
@@ -78,12 +80,9 @@
 	bottom:0;
 	background-color: rgba(255,255,255,1);
 	width: 100%;
-	padding:5px;
+	padding-left:5px;
+  padding-right:5px;
   z-index: 2;
-}
-
-.emoji-button{
-	border: 3px solid black;
 }
 
 body {
@@ -191,7 +190,6 @@ label {
   color: black;
   border-radius: 0;
   padding: 15px;
-  width:10%;
   position: absolute;
   top: 80%;
   left: 50%;
@@ -271,10 +269,30 @@ iframe{
   margin: 0 auto;
   margin-top:30px;
   float:middle;
+  padding: 10px;
 }
 
 .center-text{
   text-align: center;
   color:#7C85FB;
+}
 
+@media only screen and (max-width: 600px) {
+  #subtitle { 
+    font-size: 14px; 
+  }
+  .typed-center a{
+    font-size: 45px;
+  }
+  h4{
+    font-size: 14px;
+    display:table-caption;
+  }
+  a{
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .main-title{
+    margin-top: 0px;
+  }
 }
