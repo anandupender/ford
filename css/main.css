@@ -4,7 +4,7 @@
 }
 
 #grad {
-  height:70px;
+  height:80px;
   background: #7C85FB; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #FB5163, #7C85FB); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #FB5163, #7C85FB); /* For Opera 11.1 to 12.0 */
@@ -42,7 +42,7 @@
 }
 
 .typed-center a{
-  font-size: 100px;
+  font-size: 80px;
   display: block;
 }
 
@@ -52,7 +52,6 @@
 
 .main-title{
   float:left;
-  margin-top:15px;
   margin-left: 30px;
   color:#eee;
 }
@@ -60,7 +59,7 @@
 .column {
     float: right;
 /*    width: 27%;
-*/    margin: 3%;
+*/    margin: 1%;
     margin-top:0px; 
     margin-bottom: 5px;
     text-align: center;
@@ -291,13 +290,19 @@ iframe{
   }
   h4{
     font-size: 14px;
-    display:table-caption;
   }
   a{
-    font-size: 12px;
+    font-size: 14px;
     white-space: nowrap;
+
   }
   .main-title{
     margin-top: 0px;
+  }
+  #grad{
+    height:70px;
+  }
+  .email-link{
+    font-size: 12px;
   }
 }
