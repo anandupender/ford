@@ -2,10 +2,16 @@
     float: left;
 	margin: 20px;
 	-webkit-perspective: 600px;
-	width: 30%;
+	width: 29%;
 	display:inline-block;
 	height:300px;
 	min-width:325px;
+}
+
+@media screen and (max-width: 600px) {
+  .info-card {
+    width:90%;
+  }
 }
 
 .front, .back {
@@ -21,7 +27,7 @@
 	overflow: hidden;
 	position: absolute;
 	z-index: 1;
-
+  height:210px;
 }
 
 .back {
@@ -45,7 +51,6 @@
 .card-image {
   overflow: auto;
     max-width: 100%;
-    max-height: 90%;
 }
 
 #bottom{

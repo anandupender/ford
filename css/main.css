@@ -1,3 +1,31 @@
+#main-index-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width:100vw;
+	height:100vh;
+}
+
+#index-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 55vw;
+	padding:30px;
+	z-index:3;
+	-webkit-box-shadow: 0px 0px 57px -2px rgba(163,163,163,1);
+	-moz-box-shadow: 0px 0px 57px -2px rgba(163,163,163,1);
+	box-shadow: 0px 0px 57px -2px rgba(163,163,163,1);
+	background-color: white;
+}
+canvas{
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+}
+
 #header{
 	height:100px;
   text-align: center;
@@ -42,7 +70,7 @@
 }
 
 .typed-center a{
-  font-size: 80px;
+  font-size: 64px;
   display: block;
 }
 
@@ -60,7 +88,7 @@
     float: right;
 /*    width: 27%;
 */    margin: 1%;
-    margin-top:0px; 
+    margin-top:0px;
     margin-bottom: 5px;
     text-align: center;
     margin-top:15px;
@@ -86,8 +114,14 @@
 
 body {
   background: #eee;
-  font-family: 'Roboto Mono', monospace;
+	font-family: 'Space Mono', monospace;
+}
 
+h1,h2,h3,h4{
+	font-family: 'Space Mono', monospace;
+}
+p{
+	font-family: 'Work Sans', sans-serif;
 }
 
 h2{
@@ -136,7 +170,7 @@ label {
   -moz-column-count:    5;
   -moz-column-gap:      0px;
   column-count:         4;
-  column-gap:           9px;  
+  column-gap:           9px;
 
 }
 
@@ -156,20 +190,9 @@ label {
 }
 
 #profile-image{
-  position: absolute;
-  width:200px;
-  height:200px;
-  transform: translate(-50%, -50%);
   transition: .5s ease;
-}
-
-#profile-container{
-  position: absolute; /* or absolute */
-    top: 40%;
-    left: 50%;
-    width:300px;
-    height: 300px;
-    border-radius: 50%;
+	width:20vh;
+	height:20vh;
 }
 
 #background{
@@ -184,15 +207,10 @@ label {
 }
 
 #btn{
-  background-color: white;
   border: 2px solid black;
   color: black;
   border-radius: 0;
-  padding: 15px;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, 0);
+	padding: 9px 24px;
   text-decoration: none;
   text-align: center;
 }
@@ -206,13 +224,8 @@ label {
 #subtitle{
   color: black;
   padding: 15px;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, 0);
   text-align: center;
   font-size: 16px;
-  width:70%;
 }
 
 a{
@@ -269,6 +282,9 @@ iframe{
   margin-top:30px;
   float:middle;
   padding: 10px;
+	width:60vw;
+	height:40vw;
+
 }
 
 .center-text{
@@ -282,8 +298,8 @@ iframe{
 }
 
 @media only screen and (max-width: 600px) {
-  #subtitle { 
-    font-size: 14px; 
+  #subtitle {
+    font-size: 14px;
   }
   .typed-center a{
     font-size: 45px;
@@ -294,8 +310,10 @@ iframe{
   a{
     font-size: 14px;
     white-space: nowrap;
-
   }
+	p{
+		font-size: 12px;
+	}
   .main-title{
     margin-top: 0px;
   }

@@ -3,22 +3,66 @@
 	<head>
 		<title>stanFord Mobility</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<link rel="stylesheet" href="css/main.css" />
 		<script src="js/main.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans&display=swap" rel="stylesheet">
 	</head>
-	<body>
-		<div id="background"></div>
-		<div id = "profile-container" >
-			<div id="image-container">
-				<img src = "main/images/logo.png" id = "profile-image" onmouseover="onHover();" onmouseout="offHover();">
+	<body style="overflow: hidden;" id="body">
+		<div id="main-index-container">
+			<div id="index-content">
+				<div id="image-container">
+					<img src = "main/images/logo.png" id = "profile-image" onmouseover="onHover();" onmouseout="offHover();">
+				</div>
+
+				<h3 id="subtitle">An artful, design and research group between Stanford and Ford exploring the near future of multimodal and shared transportation experiences</h3>
+				<a href="main/choose.html" id="btn" type="submit"><span id="btn-text">Enter</span></a>
 			</div>
-
 		</div>
-		<h3 id="subtitle">An artful, design and research group between Stanford and Ford exploring the near future of multimodal and shared transportation experiences</h3>
-		<a href="main/choose.html" id="btn" type="submit"><span id="btn-text">Enter</span></a>
-
 
 	</body>
+	<script>
+		var body = document.getElementById('body');
+		canvas = document.createElement('canvas');
+		canvas.setAttribute('width', window.innerWidth);
+		canvas.setAttribute('height', window.innerHeight);
+		canvas.setAttribute('id', 'canvas');
+		body.appendChild(canvas);
+		if(typeof G_vmlCanvasManager != 'undefined') {
+			canvas = G_vmlCanvasManager.initElement(canvas);
+		}
+		context = canvas.getContext("2d");
+
+		function getRandomColor() {
+		  var letters = '0123456789ABCDEF';
+		  var color = '#';
+		  for (var i = 0; i < 6; i++) {
+		    color += letters[Math.floor(Math.random() * 16)];
+		  }
+		  return color;
+		}
+
+		var drawLoop = function() {
+				draw();
+				var rand = Math.round(Math.random() * (600 - 100)) + 100; // generate new time (between 3sec and 500"s)
+				setTimeout(drawLoop, rand);
+		}
+
+		function draw() {
+			var randX = Math.round(Math.random() * (window.innerWidth)); // generate new time (between 3sec and 500"s)
+			var randY = Math.round(Math.random() * (window.innerHeight)); // generate new time (between 3sec and 500"s)
+			var randSize = Math.round(Math.random() * (10-2) + 2); // generate new time (between 3sec and 500"s)
+
+			var ctx = canvas.getContext('2d');
+			// ctx.fillRect(randX , randY, 10, 10);
+			ctx.beginPath();
+			ctx.fillStyle = getRandomColor();
+			ctx.arc(randX, randY, randSize, 0, 2 * Math.PI);
+			ctx.fill();
+		}
+
+		drawLoop();
+
+
+	</script>
 </html>
