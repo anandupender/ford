@@ -58,3 +58,13 @@
 	bottom:0;
 	height:100px;
 }
+
+@media screen and (max-width: 600px) {
+  .info-card {
+    min-width: 230px;
+    height:
+  }
+  .front{
+    height:190px;
+  }
+}
