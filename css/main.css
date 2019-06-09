@@ -29,6 +29,8 @@ canvas{
 #header{
 	height:100px;
   text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
 #grad {
@@ -51,16 +53,14 @@ canvas{
 }
 
 #header h1{
-  font-size: 36px;
+  font-size: 64px;
   color:#7C85FB;
   margin-left:0px;
   margin-right:0px;
-  white-space: nowrap;
-
 }
 
 #header h3{
-  font-size: 14px;
+  font-size: 16px;
 	margin: 6px;
 }
 
@@ -93,7 +93,12 @@ canvas{
 .col {
   flex: 20%;
   padding: 0 4px;
-	margin: 5px;
+	margin: 15px;
+}
+
+.col.col-small{
+	margin-left: 20vw;
+	margin-right: 20vw;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -151,7 +156,11 @@ canvas{
 body {
   background: #eee;
 	font-family: 'Space Mono', monospace;
-	cursor: url("../main/images/fordCursor.png"), auto;
+	cursor: url("../main/images/fordCursor.png") 40 25, auto;
+}
+
+a:hover{
+	cursor: url("../main/images/clickCursor.png") 20 15, auto;
 }
 
 h1,h2,h3,h4{
@@ -171,6 +180,14 @@ h2{
 
 .yearTwo{
 	color:#FB5163 !important;
+}
+
+.yearOneBorder{
+	border: 3px solid #7C85FB;
+}
+
+.yearTwoBorder{
+	border: 3px solid #FB5163;
 }
 
 input{
@@ -258,10 +275,25 @@ label {
 	padding: 9px 24px;
   text-decoration: none;
   text-align: center;
+	animation-name: none;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction:alternate;
+}
+
+#btn:hover{
+	animation-name: myFlash;
+}
+
+@keyframes myFlash {
+  0%   {border-color:#5946FA; color:#5946FA}
+	25%   {border-color:#B884E8; color:#B884E8}
+	50%   {border-color:#F99EFF; color:#F99EFF }
+	75%   {border-color:#E884A8; color:#E884A8 }
+	100%   {border-color:#FA6450; color:#FA6450}
 }
 
 #btn-text{
-  color:black;
   font-size: 18px;
 }
 
@@ -289,6 +321,27 @@ a:hover{
   padding-left: 20px;
   margin-top: 30px;
   /* height:100%; */
+}
+
+.card-container{
+	display: flex;
+	flex-direction: row;
+	align-items:flex-start;
+	justify-content: center;
+}
+
+.card.profile{
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	width:30vw;
+	height: auto;
+	margin: 20px;
+	padding: 15px;
+}
+
+.card-img{
+	width:60%;
 }
 
 .card.yearOne{
@@ -362,32 +415,54 @@ iframe{
     font-size: 14px;
   }
   .typed-center a{
-    font-size: 45px;
+    font-size: 36px;
   }
-	#header h1{
-		font-size: 56px;
+	#header{
+		margin-top: 20px;
+		margin-bottom: 0px;
 	}
 	#header h3{
-		font-size: 20px;
+		font-size: 14px;
+		width:85%;
+		margin:auto;
 	}
-
+	#header h3.yearOne{
+		font-size: 10px;
+		width:100%;
+	}
+	#header h3.yearTwo{
+		font-size: 10px;
+		width:100%;
+	}
+	#header h1{
+		font-size: 36px;
+	}
+	.col.col-small{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.center-text{
+		width:90%;
+	}
   a{
-    font-size: 24px;
+    font-size: 14px;
     white-space: nowrap;
   }
 	p{
 		font-size: 12px;
 	}
+	iframe{
+		width: 100vw;
+		height: 40vh;
+		margin-bottom: 40px;
+	}
   .main-title{
     margin-top: 0px;
-  }
-  #grad{
-    height:70px;
   }
   .email-link{
     font-size: 12px;
   }
 	.with-love{
-	  font-size: 14px;
+	  font-size: 8px;
 	}
 }

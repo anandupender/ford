@@ -1,53 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>stanFord Mobility</title>
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
 
   	<link rel="stylesheet" href="../css/main.css" type="text/css">
   	<link rel="stylesheet" href="../css/flip.css" type="text/css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans&display=swap" rel="stylesheet">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   	<script src="../js/main.js"></script>
   </head>
   <body id="body">
 	<div id="grad">
-		<div class="myRow">
-			<div class="main-title">
-				<h4>
-					<a href="../index.html">Stanford<br />Mobility<br />Project</a>
-				</h4>
-			</div>
-			<div class="column" id="col1">
-				<h4>
-					<a href="stories.html">
-					Stories</a>
-				</h4>
-			</div>
-			<div class="column" id="col2">
-				<h4>
-					<a href="photoStream.html">
-					Prototypes</a>
-				</h4>
-			</div>
-			<div class="column" id="col3">
-				<h4>
-					<a href="language.html">
-					Shared Language</a>
-				</h4>
-			</div>
-		</div>
 	</div>
 
 	<div id="header">
 		<h1> Our Prototypes </h1>
 		<h3><b>Hover</b> over prototypes to hear our stories behind their creation</h3>
+    <h3 class="animated fadeInDownBig"><b>SOUND ON! 🔊 🔊</b></h3>
     <div id="name-bar">
-		    <h3 class="yearOne"> <span style="font-size:16px;">&#9724;</span> = 2017-2018: <a class="email-link" href="mailto:anandx@stanford.edu">Anand Upender</a> // <a class="email-link" href="mailto:gracegr@stanford.edu">Grace Greenwald</a> // <a class="email-link" href="mailto:daniel19@stanford.edu">Daniel Chan</a> // <a class="email-link" href="cole@wyshme.com">Cole Patterson</a> // <a class="email-link" href="mailto:katanian@stanford.edu">Dr. Barbara Karanian</a></h3>
-        <h3 class="yearTwo"> <span style="font-size:16px;">&#9724;</span> = 2018-2019: <a class="email-link" href="mailto:alemac@stanford.edu">Mulan MacDougall</a> // <a class="email-link" href="mailto:hnalband@stanford.edu">Hera Nalbandian</a> // <a class="email-link" href="mailto:veesan@stanford.edu">Veronica Sanchez</a> // <a class="email-link" href="bracca@stanford.edu">Brandon Racca</a> // <a class="email-link" href="mailto:ktovson@stanford.edu">Kevin Tovson</a> // <a class="email-link" href="mailto:hchang3@stanford.edu">Hanna Chang</a></h3>
-        <h4 class = "with-love">Made with love from scratch</h4>
 		</div>
 	</div>
 
@@ -57,10 +30,10 @@
 		 	<source src="audio/dealershipAR.m4a" type="audio/mp4">
 			Your browser does not support the audio element.
 		</audio>
-		<div class="front">
+		<div class="front yearOneBorder">
 			<img class="card-image" src="images/ar.png">
 		</div>
-		<div class="back">
+		<div class="back yearOneBorder">
 			<h2>Dealership AR</h2>
 			<p>
 				One idea we had was to use augmented reality to help a user better understand the use of a new car at a dealership. The idea of having my stuff in a car makes it so much more personal, and for some, seeing the new car in the context of everyday travel for them could be a way to understand how it would fit in their life.
@@ -69,14 +42,10 @@
 	</div>
 
 	<div class="info-card"  >
-<!-- 		<audio>
-		 	<source src="audio/test.mp3" type="audio/mpeg">
-			Your browser does not support the audio element.
-		</audio> -->
-		<div class="front">
+		<div class="front yearOneBorder">
 			<img class="card-image" src="images/postit.JPG">
 		</div>
-		<div class="back">
+		<div class="back yearOneBorder">
 			<h2>Context Dictate Modes</h2>
 			<p>
 				We used ethnographic interviews, shared travel experiences, and open-source data to think about the different data points that come together in the choice to select different modes of travel. Are you traveling with a partner or with kids, are you on your way to give a presentation, are you coming from a hotel in a new city? How do these contexts drive decision-making, and which attribute the most weight to the choice?
@@ -89,10 +58,10 @@
 		 	<source src="audio/SuperFord.m4a" type="audio/mp4">
 			Your browser does not support the audio element.
 		</audio>
-		<div class="front">
+		<div class="front yearOneBorder">
 			<img class="card-image" src="images/Evolution.png">
 		</div>
-		<div class="back">
+		<div class="back yearOneBorder">
 			<h2>Super Ford</h2>
 			<p>
 				Super Ford is a game that gives reputation to shared resources and vehicles in a city. Our team began to wonder how you could give a sense of ownership or responsibility to those who lack it. In this case, when you don’t own your car, every car, bike, train, or bus is treated as a service you have no say in. This “fake” ownership can come in the form of interesting digital/physical interactions in which physical artifacts have a life on the web.
@@ -105,10 +74,10 @@
 		 	<source src="audio/pseudocode.m4a" type="audio/mp4">
 			Your browser does not support the audio element.
 		</audio>
-		<div class="front">
+		<div class="front yearOneBorder">
 			<img class="card-image" src="images/pseudocode.png">
 		</div>
-		<div class="back">
+		<div class="back yearOneBorder">
 			<h2>Route Preference Pseudo Code</h2>
 			<p>
 				There are many decisions that go into choosing our transportation. Money, time, number of seats, privacy, space, and scenery are all some we have all felt the pain of sacrificing on. We wondered if we could prompt travelers for these interesting desires to choose a method of transport more tied to their values. What are the knobs or metrics of transportation that each user would have weights on in a machine learning model?
@@ -121,10 +90,10 @@
 		 	<source src="audio/PlayDough.m4a" type="audio/mp4">
 			Your browser does not support the audio element.
 		</audio>
-		<div class="front">
+		<div class="front yearOneBorder">
 			<img class="card-image" src="images/tableExp1.JPG">
 		</div>
-		<div class="back">
+		<div class="back yearOneBorder">
 			<h2>Play-Dough at Ford</h2>
 			<p>
 				We tapped into unique Ford employee perspectives to determine which of our initial questions were most fruitful to tackle. We used clay as a medium to understand nostalgia for old cars, to visualize past road trips, and to re-discover play in the workplace.
@@ -139,10 +108,10 @@
 		 	<source src="audio/ExplorationCalculator.m4a" type="audio/mp4">
 			Your browser does not support the audio element.
 		</audio>
-		<div class="front">
+		<div class="front yearOneBorder">
 			<img class="card-image" src="images/ExplorationCalculator.png">
 		</div>
-		<div class="back">
+		<div class="back yearOneBorder">
 			<h2>Exploration Calculator</h2>
 			<p>
 				How can we use the history of someone's movement (tracked by the iphone app 'Moves', and exported to Google Maps) to encourage people to explore their surroundings and break the barriers of their usual routines? This prototype uses personal, artful data visualization to inform consumers of unnoticed habits. It explores the idea of movement data as art (with the choice of line thickness, color, composition, etc. as critically important components to eventual behavior modification regarding transportation).
@@ -150,25 +119,52 @@
 		</div>
 	</div>
 
-
-	<div class="info-card"  >
-		<div class="front">
+	<div class="info-card">
+		<div class="front yearOneBorder">
 			<img class="card-image" src="images/iphones.png">
 		</div>
-		<div class="back">
+		<div class="back yearOneBorder">
 			<h2>What's Motivating You?</h2>
 			<p>
 				What is a simple way to see the emotional state or priorities of a traveler before they choose a standard mode of transport that they do not actually enjoy? This interface is the human facing side of the pseudocode to the left and would slowly disappear in the app as it got to know the user better.
 			</p>
 		</div>
 	</div>
+
+  <div class="info-card">
+    <div class="front yearTwoBorder">
+      <img class="card-image" src="images/avProto.png">
+    </div>
+    <div class="back yearTwoBorder">
+      <h2>Proving Kindness</h2>
+      <p>
+        Cliff Nass said that if you want to prove that a technology is smart, you must show that it is kind.  We took this to heart when we set out to build a prototype around increasing passengers’ trust in autonomous vehicles.   For this prototype, an in-car display shows your vehicle and communicates what actions it is taking and why.  Are you concerned about the cyclist you see up ahead? Your car sees it too, and acknowledges it by displaying their location on the screen.
+      </p>
+    </div>
+  </div>
+
+  <div class="info-card">
+    <div class="front yearTwoBorder">
+      <img class="card-image" src="images/seamlessProto.png">
+    </div>
+    <div class="back yearTwoBorder">
+      <h2>Providing Seamlessness</h2>
+      <p>
+        Calendars and to-do lists on our phones help us keep track of the time-based components of our schedules, but we often overlook the spatial component.  By integrating calendar events with your vehicle’s vitals, this prototype helps you take the journey into account as you go about your day to mitigate unwelcome surprises.  Do you have a doctor’s appointment right after work tomorrow? And you won’t have enough gas to get home afterwards? Your vehicle will ask whether you want to fill up now in preparation.
+      </p>
+    </div>
+  </div>
+
 </div>
+
 <div id="thin-grad"></div>
 <h1 class="center-text">Summary of Work on Multimodal Transporation</h1>
 <iframe align="middle" src="https://www.youtube.com/embed/BhLMfICjh9w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	<div id="bottom-bar"></div>
 
   <script src="../js/photoStream.js"></script>
+  <script src="../js/header.js"></script>
+
 
   </body>
 </html>
