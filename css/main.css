@@ -428,13 +428,15 @@ iframe{
 	position: fixed;
 	top:0px;
 	z-index:100;
-	background-color: white;
+	/* background-color: white; */
+	background-image: url("../main/images/gif.gif");
 	display: none;
 }
 
 .no-mobile-content{
 	width:75%;
 	text-align: center;
+	color:white;
 }
 
 .carousel{

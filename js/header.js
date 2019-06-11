@@ -81,7 +81,7 @@ if(grad != undefined){
 var mobileHider = `
   <div class="no-mobile-content">
     <h2>Get your eyes off your tiny phone :)</h2>
-    <h4>This site is best viewable on desktop.</h4>
+    <h4>This site is best viewed on desktop.</h4>
   </div>
 `;
 var newDiv = document.createElement("div");
