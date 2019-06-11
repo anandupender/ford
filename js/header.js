@@ -27,7 +27,9 @@ var nameBar = `
 `
 
 var curNameBar = document.getElementById("name-bar");
-curNameBar.innerHTML = nameBar;
+if(curNameBar != undefined){
+  curNameBar.innerHTML = nameBar;
+}
 
 var gradInterior= `
 <div class="myRow">
@@ -72,8 +74,9 @@ var gradInterior= `
 `
 
 var grad = document.getElementById("grad");
-grad.innerHTML = gradInterior;
-
+if(grad != undefined){
+  grad.innerHTML = gradInterior;
+}
 
 var mobileHider = `
   <div class="no-mobile-content">

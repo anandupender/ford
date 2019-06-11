@@ -114,6 +114,12 @@ canvas{
     flex: 50%;
     max-width: 50%;
   }
+	#index-content{
+		width: 75vw;
+	}
+	#subtitle{
+		padding:0px;
+	}
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -160,6 +166,7 @@ body {
   background: #eee;
 	font-family: 'Space Mono', monospace;
 	cursor: url("../main/images/fordCursor.png") 40 25, auto;
+	overflow-x: hidden;
 }
 
 a:hover{
@@ -525,7 +532,11 @@ iframe{
 	.with-love{
 	  font-size: 8px;
 	}
+	/* for now just don't show on mobile */
 	.no-mobile-container{
 		display: flex;
+	}
+	body{
+		overflow:hidden;
 	}
 }
