@@ -83,6 +83,13 @@ canvas{
   z-index:1;
 }
 
+.myRow{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .noBSRow {
   display: flex;
   flex-wrap: wrap;
@@ -126,12 +133,8 @@ canvas{
 }
 
 .column {
-    float: right;
-		margin: 1%;
-    margin-top:0px;
-    margin-bottom: 5px;
-    text-align: center;
-    margin-top:15px;
+  text-align: center;
+	margin-right: 40px;
 }
 
 .column p{
@@ -172,6 +175,10 @@ p{
 
 h2{
   font-weight: normal;
+}
+
+h4{
+	font-size: 18px;
 }
 
 .yearOne{
@@ -402,6 +409,36 @@ iframe{
   text-align: center;
   color:#7C85FB;
 	width: 75%;
+}
+
+.carousel{
+	width:40vw;
+	margin:auto;
+	margin-top: 30px;
+}
+
+.carousel-item{
+	height: 30vw;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.carousel-caption{
+	position: relative;
+	padding-top: 30%;
+	left:0;
+	right:0;
+	bottom: 0;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
 .with-love{
