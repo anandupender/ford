@@ -73,3 +73,16 @@ var gradInterior= `
 
 var grad = document.getElementById("grad");
 grad.innerHTML = gradInterior;
+
+
+var mobileHider = `
+  <div class="no-mobile-content">
+    <h2>Get your eyes off your tiny phone :)</h2>
+    <h4>This site is best viewable on desktop.</h4>
+  </div>
+`;
+var newDiv = document.createElement("div");
+newDiv.className = "no-mobile-container";
+newDiv.innerHTML = mobileHider;
+
+document.body.appendChild(newDiv);
