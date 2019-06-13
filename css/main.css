@@ -27,7 +27,6 @@ canvas{
 }
 
 #header{
-	height:100px;
   text-align: center;
 	margin-top: 50px;
 	margin-bottom: 30px;
@@ -283,6 +282,8 @@ label {
 }
 
 #btn{
+	display: inline-block;
+	margin: 10px;
   border: 2px solid black;
   color: black;
   border-radius: 0;
