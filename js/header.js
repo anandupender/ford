@@ -60,7 +60,7 @@ var gradInterior= `
     <div class="column" id="col5">
       <h4>
         <a href="crf.html">
-        CRF</a>
+        C.R.F.</a>
       </h4>
     </div>
     <div class="column" id="col4">
@@ -80,7 +80,7 @@ if(grad != undefined){
 
 var mobileHider = `
   <div class="no-mobile-content">
-    <h2>Get your eyes off your tiny phone :)</h2>
+    <h2>Let's move this to the big screen :)</h2>
     <h4>This site is best viewed on desktop.</h4>
   </div>
 `;
