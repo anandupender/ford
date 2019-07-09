@@ -19,10 +19,25 @@
 	<div id="header">
 		<h1> Our Prototypes </h1>
 		<h3><b>Hover</b> over prototypes to hear our stories behind their creation</h3>
-    <a id="btn" style="animation-name:initial;"><b>CLICK TO TURN SOUND ON! 🔊 🔊</b></a>
     <div id="name-bar">
 		</div>
 	</div>
+
+  <div id="modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h4>This page uses audio to tell stories. </br> Hover to explore!</h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="
+          var modal = document.getElementById('modal');
+          modal.style.display = 'none';
+          ">Sounds good!</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
  <div class ="noBSRow">
 	<div class="info-card"   id="card1">
@@ -165,9 +180,9 @@
 
 </div>
 
-<div id="thin-grad"></div>
-<h1 class="center-text">Summary of Work on Multimodal Transporation</h1>
-<iframe align="middle" src="https://www.youtube.com/embed/BhLMfICjh9w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <div id="thin-grad"></div>
+  <h1 class="center-text">Summary of Work on Multimodal Transporation</h1>
+  <iframe align="middle" src="https://www.youtube.com/embed/BhLMfICjh9w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	<div id="bottom-bar"></div>
 
   <script src="../js/photoStream.js"></script>
